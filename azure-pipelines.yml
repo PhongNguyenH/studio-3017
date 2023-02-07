@@ -1,0 +1,20 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+- task: katalonTask@1
+  inputs:
+    version: '8.5.5'
+    executeArgs: '-testSuitePath="Test Suites/healthcare-tests - TS_RegressionTest" -browserType="TestCloud" -testcloudEnvironmentId="165" -testcloudTunnel="false" -executionProfile="default" -apiKey="f70e7a9f-9042-4e64-8b77-2329a3ba4cba" -orgID=743630 --config -webui.autoUpdateDrivers=true'
