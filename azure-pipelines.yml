@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: katalon-mac-mini
+  name: "default"
 
 steps:
 - script: echo Hello, world!
