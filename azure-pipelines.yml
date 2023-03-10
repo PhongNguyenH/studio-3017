@@ -17,6 +17,6 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      cd ./Users/katalon/Downloads/Katalon_Studio_Engine_MacOS-8.6.0/Katalon Studio Engine.app/Contents/MacOS
+      cd /Users/katalon/Downloads/Katalon_Studio_Engine_MacOS-8.6.0/Katalon Studio Engine.app/Contents/MacOS
       pwd
       ./katalonc -noSplash -runMode=console -projectPath="/Users/katalon/Downloads/Phong-Machine/vsts-agent-osx-x64-2.217.2/_work/1/s/test.prj" -retry=0 -testSuitePath="Test Suites/healthcare-tests - TS_RegressionTest" -browserType="Chrome" -executionProfile="default" --config -webui.autoUpdateDrivers=true
