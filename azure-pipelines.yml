@@ -14,7 +14,7 @@ steps:
   displayName: 'Run a one-line script'
 
 
-- task: CmdLine@2
+- task: katalonTask@1
   inputs:
-    script: |
-      /Users/katalon/Downloads/Katalon_Studio_Engine_MacOS-8.6.0/Katalon Studio Engine.app/Contents/MacOS/katalonc -noSplash -runMode=console -projectPath="./test.prj" -retry=0 -testSuitePath="Test Suites/healthcare-tests - TS_RegressionTest" -browserType="Chrome" -executionProfile="default" --config -webui.autoUpdateDrivers=true
+    location: '/Users/katalon/Downloads/Katalon_Studio_Engine_MacOS-8.6.0/'
+    executeArgs: '-projectPath="/Users/katalon/Downloads/Phong-Machine/vsts-agent-osx-x64-2.217.2/_work/1/s/test.prj" -retry=0 -testSuitePath="Test Suites/healthcare-tests - TS_RegressionTest" -browserType="Chrome" -executionProfile="default" --config -webui.autoUpdateDrivers=true'
