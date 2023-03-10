@@ -17,4 +17,4 @@ steps:
 - task: katalonTask@1
   inputs:
     location: '/Users/katalon/Downloads/Katalon_Studio_Engine_MacOS-8.6.0/'
-    executeArgs: '-projectPath="/Users/katalon/Downloads/Phong-Machine/vsts-agent-osx-x64-2.217.2/_work/1/s/test.prj" -retry=0 -testSuitePath="Test Suites/healthcare-tests - TS_RegressionTest" -browserType="Chrome" -executionProfile="default" --config -webui.autoUpdateDrivers=true'
+    executeArgs: '-projectPath="/Users/katalon/Downloads/Phong-Machine/vsts-agent-osx-x64-2.217.2/_work/1/s/test.prj" -retry=0 -testSuitePath="Test Suites/healthcare-tests - TS_RegressionTest" -browserType="Chrome" -executionProfile="default" --config -webui.autoUpdateDrivers=true -apiKey="f70e7a9f-9042-4e64-8b77-2329a3ba4cba"'
