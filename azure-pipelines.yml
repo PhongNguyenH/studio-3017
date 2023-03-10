@@ -13,7 +13,9 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: |
+- script:
+  - cd /Users/katalon/Downloads/Katalon_Studio_Engine_MacOS-8.6.0/Katalon Studio Engine.app/Contents/MacOS
+  - pwd
 - task: katalonTask@1
   inputs:
     version: '8.5.5'
